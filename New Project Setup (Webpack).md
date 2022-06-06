@@ -53,6 +53,7 @@ Add the following to `package.json`:
 
 2. Add the following to `webpack.config.js`:  
 
+  
     module: {
         rules: [
             {
