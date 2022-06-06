@@ -10,7 +10,7 @@ Basic setup of a project that uses:
 
 Example: `git clone git@github.com:LiamJShaw/notes.git`
 
-## File Structure
+## Create file structure
 
 `mkdir src dist`  
 `mkdir src/styles src/modules src/fonts`  
