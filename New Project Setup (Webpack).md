@@ -23,7 +23,7 @@ Basic setup of a project that uses:
 
 ## Webpack
 
-`npm install webpack webpack-cli --save-dev`  
+Install: `npm install webpack webpack-cli --save-dev`  
 
 `touch webpack.config.js`  
 
@@ -49,7 +49,7 @@ Add the following to `package.json`:
     },
 
 ### Set up loading CSS, images, and fonts
-`npm install --save-dev style-loader css-loader`  
+Install: `npm install --save-dev style-loader css-loader`  
 
 Add the following to `webpack.config.js`:  
 
@@ -76,21 +76,35 @@ Install: `npm install eslint --save-dev`
 
 Init config: `npm init @eslint/config`  
 
-Run: `npx eslint file`  
+CLI usage: `npx eslint file`  
 
 VSCode extension?  
 
 ## Prettier
 
-Install: `npm install --save-dev --save-exact prettier`  
+1. Install: `npm install --save-dev --save-exact prettier`  
 
-Init config: `echo {}> .prettierrc.json`  
+2. Init config: `echo {}> .prettierrc.json`  
 
-Stop Prettier formatting certain files:  
-`touch .prettierignore`  
+3. Stop Prettier formatting certain files (Base it on your .gitignore):  
+`touch .prettierignore`    
 
-Base it on your .gitignore  
-
-Run: `npx prettier --write`
+CLI usage: `npx prettier --write`
 
 Make Prettier and ESLint work nicely together: https://github.com/prettier/eslint-config-prettier#installation
+
+Alternative ESLint/Prettier setup to look into: https://gist.github.com/bradtraversy/aab26d1e8983d9f8d79be1a9ca894ab4
+
+## Jest
+
+1. Install: `npm install --save-dev jest`  
+
+2. Edit `package.json` as so:  
+
+    "scripts": {
+        "test": "jest"
+    },
+
+3. Configure: `jest --init`
+
+4. Using Jest with Webpack: https://jestjs.io/docs/webpack
