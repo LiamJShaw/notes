@@ -1,12 +1,14 @@
 # New Project Setup
 Basic setup of a project that uses:  
-- NPM
-- Webpack
-- Prettier
-- ESLint
-- Jest  
+- NPM for packages
+- Webpack for bundling
+- Prettier for code formatting
+- ESLint for code linting/checking
+- Jest for testing
 
 ## Create and clone git repo
+
+Example: `git clone git@github.com:LiamJShaw/notes.git`
 
 ## File Structure
 
@@ -17,16 +19,13 @@ Basic setup of a project that uses:
 
 ## NPM
 
-`npm init -y`  
-
-(Can set `private: true` here)  
+Initialise: `npm init -y`    
 
 ## Webpack
 
-Install: `npm install webpack webpack-cli --save-dev`  
+1. Install: `npm install webpack webpack-cli --save-dev`  
 
-`touch webpack.config.js`  
-
+2. Create config: `touch webpack.config.js`  
 
 ### Basic Webpack config:
 
@@ -42,16 +41,17 @@ Install: `npm install webpack webpack-cli --save-dev`
 
 ### Set up `npm run build`
 
-Add the following to `package.json`:  
+1. Add the following to `package.json`:  
 
     "scripts": {
         "build": "webpack"
     },
 
 ### Set up loading CSS, images, and fonts
-Install: `npm install --save-dev style-loader css-loader`  
 
-Add the following to `webpack.config.js`:  
+1. Install: `npm install --save-dev style-loader css-loader`  
+
+2. Add the following to `webpack.config.js`:  
 
     module: {
         rules: [
@@ -72,9 +72,9 @@ Add the following to `webpack.config.js`:
 
 ## ESLint
 
-Install: `npm install eslint --save-dev`  
+1. Install: `npm install eslint --save-dev`  
 
-Init config: `npm init @eslint/config`  
+2. Init config: `npm init @eslint/config`  
 
 CLI usage: `npx eslint file`  
 
@@ -90,6 +90,8 @@ VSCode extension?
 `touch .prettierignore`    
 
 CLI usage: `npx prettier --write`
+
+VSCode extension?  
 
 Make Prettier and ESLint work nicely together: https://github.com/prettier/eslint-config-prettier#installation
 
