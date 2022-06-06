@@ -1,9 +1,9 @@
 # New Project Setup
 ## NPM / Webpack / Prettier / ESLint / Jest
 
-Create and clone git repo
+1. ### Create and clone git repo
 
-### File Structure
+2. ### File Structure
 mkdir src dist
 mkdir src/styles src/modules
 touch dist/index.html
