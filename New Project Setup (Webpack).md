@@ -1,29 +1,29 @@
 # New Project Setup
-## NPM / Webpack / Prettier / ESLint / Jest
+NPM / Webpack / Prettier / ESLint / Jest
 
-1. ### Create and clone git repo
+## Create and clone git repo
 
-2. ### File Structure
+## File Structure
 
 mkdir src dist  
 mkdir src/styles src/modules  
 touch dist/index.html  
 touch src/index.js src/styles/styles.css  
 
-### NPM
+## NPM
 
 npm init -y  
 
 (Can set "private: true" here)  
 
-### Webpack
+## Webpack
 
 npm install webpack webpack-cli --save-dev  
 
 touch webpack.config.js  
 
 
-#### Basic Webpack config:
+### Basic Webpack config:
 
     const path = require('path');
 
@@ -34,3 +34,9 @@ touch webpack.config.js
         path: path.resolve(__dirname, 'dist'),
       },
     };
+
+### Set up `npm run build`
+
+    "scripts": {
+        "build": "webpack"
+    },
