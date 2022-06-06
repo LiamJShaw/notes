@@ -49,11 +49,10 @@ Add the following to `package.json`:
 
 ### Set up loading CSS, images, and fonts
 
-1. Install: `npm install --save-dev style-loader css-loader`  
+Install: `npm install --save-dev style-loader css-loader`  
 
-2. Add the following to `webpack.config.js`:  
+Add the following to `webpack.config.js`:  
 
-  
     module: {
         rules: [
             {
