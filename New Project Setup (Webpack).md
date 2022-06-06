@@ -41,7 +41,7 @@ Initialise: `npm init -y`
 
 ### Set up `npm run build`
 
-1. Add the following to `package.json`:  
+1. Add the following to `package.json`:
 
     "scripts": {
         "build": "webpack"
