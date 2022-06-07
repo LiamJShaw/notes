@@ -27,12 +27,13 @@ Initialise: `npm init -y`
 
 2. Create config: `touch webpack.config.js`  
 
-### Basic Webpack config:
+### Basic `webpack.config.js` with source map:
 
     const path = require('path');
 
     module.exports = {
     entry: './src/index.js',
+    devtool: 'inline-source-map',
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
